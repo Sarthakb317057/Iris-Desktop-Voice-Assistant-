@@ -12,7 +12,7 @@ voices = engine.getProperty('voices')#voices will get the voices of microsoft ap
 #there are 2 voices david and zira we can change it by 0 and 1 in print(voices[1].id)
 engine.setProperty('voices', voices[0].id)
 
-#it help chotu to speak
+#it help Iris to speak
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
@@ -44,7 +44,7 @@ def takecommand():
         print("Sir Said:",query) #it will be printed what we said
 
     except Exception as e:
-        print(e) #if there is exception what it can nbot recognize it will print it and say dobara bol
+        print(e) #if there is exception that it can not recognize it will print it and say Can you please Pardon...
         print("Can you please Pardon...")
         query = 'None'
 
